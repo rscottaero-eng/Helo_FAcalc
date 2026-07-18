@@ -485,4 +485,4 @@ def update_graph(WE, SHP, Nbl, Neng, kMR, kTurb, kLG, kMil, kAttack, kUAS, kPreP
  
  
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=True)
