@@ -7,7 +7,7 @@ Created on Wed Jul 15 21:54:43 2026
 
 import plotly.graph_objects as go
 import dash
-from dash import dcc, html, Input, Output, State, callback
+from dash import dcc, html, Input, Output, State, callback, html
 import numpy as np
 
 exec(open('cFA_hardcode_data.py').read())
@@ -485,4 +485,4 @@ def update_graph(WE, SHP, Nbl, Neng, kMR, kTurb, kLG, kMil, kAttack, kUAS, kPreP
  
  
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0")
